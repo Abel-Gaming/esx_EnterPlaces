@@ -50,7 +50,7 @@ Citizen.CreateThread(function()
 	if Config.EnableBlips then
 		for k,v in pairs(Config.Locations) do 
 			local blip = AddBlipForCoord(v.BlipCoord.x, v.BlipCoord.y, v.BlipCoord.z)
-			SetBlipSprite (blip, 50)
+			SetBlipSprite (blip, v.BlipSprite)
 			SetBlipDisplay(blip, 4)
 			SetBlipScale  (blip, 0.6)
 			SetBlipAsShortRange(blip, true)
